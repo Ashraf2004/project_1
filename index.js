@@ -15,7 +15,7 @@ mongoose.connect(mongoUrl,{
 })
 .catch((e)=>console.log(e));
 
-require("./userDetails");
+require("./controller/userDetails");
 const User = mongoose.model("UserInfo");
 //API
 app.post("/register",async(req,res)=>{
